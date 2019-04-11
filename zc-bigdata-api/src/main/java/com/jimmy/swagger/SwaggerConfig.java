@@ -16,9 +16,14 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Created by Administrator on 2019/4/11/011.
  */
-@Configuration
-@EnableSwagger2
+@Configuration//需要实力化
+@EnableSwagger2//启动swagger，可以写在spring-boot的启动上
 public class SwaggerConfig extends WebMvcConfigurerAdapter {
+    /**
+     * Docket可以有多个,groupName分组的信息,每个分组可以有自己的类型
+     *
+     * @return
+     */
     @Bean
     public Docket api() {
         System.out.println("----XIN----2018/7/11 下午12:58 Line:22,当前类=SwaggerConfig.api()");
@@ -27,14 +32,19 @@ public class SwaggerConfig extends WebMvcConfigurerAdapter {
                  * paths():指定针对哪些请求生成接口文档
                  * 参考官方资料：http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api ****/
                 //.apis(RequestHandlerSelectors.any())
-                .apis(RequestHandlerSelectors.basePackage("com.jimmy.controller"))
-                .paths(PathSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.jimmy.controller"))//controller所在的位置
+//                .paths(Predicates.or(PathSelectors.ant("/demo2"),
+//                        PathSelectors.ant("/demo1")
+//                ))//对路径进行过滤,是对方法上的requestMapper地址进行过滤
                 .build()
                 .apiInfo(apiInfo()).pathMapping("/");
 
     }
 
     private ApiInfo apiInfo() {
+        /**
+         * api的节本信息
+         */
         return new ApiInfoBuilder().title("RestAPI Docs")
                 .termsOfServiceUrl("")
                 .build();

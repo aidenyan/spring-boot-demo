@@ -6,10 +6,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
+
 /**
  * Created by Administrator on 2019/4/10/010.
  */
-//@EnableApolloConfig //启动配置中心是需要用到
+//@EnableApolloConfig //启动配置中心
 @SpringBootApplication
 @MapperScan("mybatis.mapper")
 public class Application {
