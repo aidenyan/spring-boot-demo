@@ -1,0 +1,19 @@
+<mapper namespace="com.jimmy.mapper.SysConfigMapper" >
+    <resultMap id="BaseResultMap" type="com.jimmy.entity.SysConfig" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="variable" property="variable" jdbcType="VARCHAR" />
+        <result column="value" property="value" jdbcType="VARCHAR" />
+        <result column="set_by" property="setBy" javaType="VARCHAR"/>
+        <result column="set_time" property="setTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        variable, value, set_by, set_time
+    </sql>
+
+    <select id="getAll" resultMap="BaseResultMap"  >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM sys_config
+    </select>
+</mapper>

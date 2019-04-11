@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/zc-bigdata.iml" filepath="$PROJECT_DIR$/zc-bigdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zc-bigdata-api/zc-bigdata-api.iml" filepath="$PROJECT_DIR$/zc-bigdata-api/zc-bigdata-api.iml" />
+      <module fileurl="file://C:\work\idea\work\spring-boot-demo\zc-bigdata-api\zc-bigdata-api.iml" filepath="C:\work\idea\work\spring-boot-demo\zc-bigdata-api\zc-bigdata-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zc-bigdata-common/zc-bigdata-common.iml" filepath="$PROJECT_DIR$/zc-bigdata-common/zc-bigdata-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zc-bigdata-dao/zc-bigdata-dao.iml" filepath="$PROJECT_DIR$/zc-bigdata-dao/zc-bigdata-dao.iml" />
+    </modules>
+  </component>
+</project>
