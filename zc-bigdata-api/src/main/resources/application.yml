@@ -14,7 +14,7 @@ server:
   port: 8083
 
 mybatis:
-  type-aliases-package: com.zcckj.entity
+  type-aliases-package: com.jimmy.entity
   mapper-locations: classpath:mybatis/mapper/*.xml
 
 
