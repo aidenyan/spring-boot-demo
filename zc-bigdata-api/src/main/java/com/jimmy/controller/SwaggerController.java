@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Created by Administrator on 2019/4/11/011.
  */
 @Controller("/swagger")
-@Api(value = "swagger", tags = "SwaggerController")//api中出现中文会导致api的接口无法点击开来
+@Api(value = "swagger", tags = "SwaggerController",description ="样例" )//api中(tags和value)出现中文会导致api的接口无法点击开来，description可以用中文
 public class SwaggerController {
     @ApiOperation(value = "demmo")
     @RequestMapping(value = "demo1", method = {RequestMethod.GET})
