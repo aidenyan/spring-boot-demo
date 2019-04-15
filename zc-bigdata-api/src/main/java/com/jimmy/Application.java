@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 //@EnableApolloConfig //启动配置中心
 @SpringBootApplication
-@MapperScan("mybatis.mapper")
+//@MapperScan("mybatis.mapper")//与在class上加上@mapper意义一样，扫描对应的mapper.xml
 //@ComponentScan(basePackages={"com.jimmy"})//spring-boot中扫描包的位置.默认的情况下扫描该启动类所在的包
 public class Application {
     public static void main(String[] args) {
