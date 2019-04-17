@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 //@EnableEurekaServer//启动eureka的配置功能
 //@EnableApolloConfig //启动配置中心
+
 @SpringBootApplication
 @EnableTransactionManagement//表示启动事务
 //@MapperScan("mybatis.mapper")//与在class上加上@mapper意义一样，扫描对应的mapper.xml
