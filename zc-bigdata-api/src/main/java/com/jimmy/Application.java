@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 /**
  * Created by Administrator on 2019/4/10/010.
  */
+//@EnableEurekaServer//启动eureka的配置功能
 //@EnableApolloConfig //启动配置中心
 @SpringBootApplication
 @EnableTransactionManagement//表示启动事务

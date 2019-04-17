@@ -14,3 +14,26 @@
    @ConditionalOnWebApplication ： Web应用环境下起效
    @ConditionalOnNotWebApplication ： 非Web应用环境下起效
 @ComponentScan 组件扫描，可自动发现和装配一些Bean,修改扫描的地址
+
+@EnableConfigurationProperties就是引入配置文件
+@ConfigurationProperties 配置信息，可以填写前置内容，
+
+
+自定义start
+META_INF/spring.factories
+其内容为：
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.jin.lijin_springboot_start_redis.MyRedisAutoConfiguration
+
+
+
+
+spring clould
+https://springcloud.cc/spring-cloud-dalston.html
+
+
+
+Ribbon的使用规则
+@LoadBalanced，在生成RestTemplate bean的方法上注解，表示restTemplate会按照bean（IRule）的规则进行负载均衡
+
+
+
