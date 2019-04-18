@@ -16,7 +16,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.jimmy</groupId>
+            <artifactId>zc-bigdata-common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
         <!-- mybatis依赖 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -26,7 +30,6 @@
     </dependencies>
     <build>
         <resources>
-            <!--package下的xml可以在idea下引入-->
             <resource>
                 <directory>src/main/java</directory>
                 <!--配置此项是为了让maven搬运Java目录下的xml文件-->
@@ -36,41 +39,6 @@
                 <filtering>false</filtering>
             </resource>
         </resources>
-        <plugins>
-            <!--mybatis自动代码生成工具-->
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.2</version>
-                <configuration>
-                    <configurationFile>src/main/resources/generatorConfig.xml</configurationFile>
-                    <verbose>true</verbose>
-                    <overwrite>true</overwrite>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>Generate MyBatis Artifacts</id>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.mybatis.generator</groupId>
-                        <artifactId>mybatis-generator-core</artifactId>
-                        <version>1.3.2</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                </configuration>
-            </plugin>
-        </plugins>
     </build>
 
 </project>

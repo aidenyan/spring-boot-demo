@@ -14,7 +14,7 @@
         <dependency>
             <groupId>com.jimmy</groupId>
             <artifactId>zc-bigdata-dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${parent.version}</version>
         </dependency>
         <!-- 配置中心-->
         <!--<dependency>-->
@@ -31,10 +31,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>-->
+        <!--</dependency>-->
 
 
 
