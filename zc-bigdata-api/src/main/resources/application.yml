@@ -17,5 +17,7 @@ mybatis:
   type-aliases-package: com.jimmy.entity
   mapper-locations: classpath:mybatis/mapper/*.xml
 
+logging:
+  config: classpath:log.xml
 
 

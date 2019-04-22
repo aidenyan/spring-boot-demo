@@ -11,5 +11,11 @@
 
     <artifactId>zc-bigdata-common</artifactId>
 
-
+<dependencies>
+    <!--日志-->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-logging</artifactId>
+    </dependency>
+</dependencies>
 </project>
